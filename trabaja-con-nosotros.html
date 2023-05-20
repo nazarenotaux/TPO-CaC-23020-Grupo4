@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shorcut icon" href="Imagenes/trabaja-con-nosotros.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c09d608a8a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/main.css">
+  <title>Trabaja con Nosotros | Di Nonna</title>
+</head>
+
+<body class="bodyTrabaja">
+  
+  <!-- Parte de arriba de la pagina, en JS -->
+  <header class="header" id="cab"></header>
+
+
+  <main class="main main3">
+    <h3 class="titulo">¡Trabaja con Nosotros!</h3>
+    <p id="bio">Vos tambien podes ser parte de este gran equipo. Para ello, completá el siguiente formulario responiendo unas preguntas basicas para que un representante de RR.HH se ponga en contacto. </p>
+
+    <div class="container-f" id="formulario">
+      <br>
+      <div class="titulo-2-f">Completa el siguiente formulario:</div>
+      <form action=" ">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nombre/s</span>
+            <input id="Nombre" type="text" placeholder="Ingresa tu nombre/s">
+          </div>
+          <div class="input-box">
+            <span class="details">Apellido/s</span>
+            <input id="Apellido" type="text" placeholder="Ingresa tu apellido/s">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input id="Email" type="email" placeholder="Ingresa tu email">
+          </div>
+          <div class="input-box">
+            <span class="details">Telefono</span>
+            <input id="Telefono" type="tel" pattern="[0-9]{10}" placeholder="Ingresa tu numero de telefono">
+          </div>
+
+          <!-- Categoria comentada por opcional.
+          <div class="input-box" id="genero">
+            <span class="details">Genero</span>
+            <input type="radio" name="opcion" value="1"> Mujer.
+            <input type="radio" name="opcion" value="2"> Hombre.
+            <input type="radio" name="opcion" value="3"> Otro.
+          </div>
+          -->
+          <div class="input-box">
+            <span class="details">Edad</span>
+            <select id="edad" name="Edad">
+              <option value="Rango1">Entre 18 y 25 años</option>
+              <option value="Rango2">Entre 25 y 35 años</option>
+              <option value="Rango3">Entre 35 y 45 años</option>
+              <option value="Rango4">Mas de 45 años</option>
+            </select>
+          </div>
+          <!-- Categoria comentada por opcional.
+          <div class="input-box">
+            <span class="details">Carga tu C.V</span>
+            <input id="CV" type="file" accept="application/pdf" placeholder="Elegir archivo PDF." required>
+          </div>
+          -->
+          <div class="input-box">
+            <span class="details">Contanos tu experiencia.</span>
+            <textarea id="Experiencia" placeholder="Experencia laboral..." name="comentario" cols="20" rows="1"></textarea>
+          </div>
+          <div class="button">
+            <input type="submit" onclick='return enviarFormulario();' value='Enviar'>
+          </div>
+        </div>
+      </form>
+      <div id="error">
+
+      </div>
+    </div>
+    <script src="./JS/validacion.js"></script>
+</main>
+
+    <!-- Pie de pagina, en JS -->
+    <footer id="pie">
+    </footer>
+ 
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

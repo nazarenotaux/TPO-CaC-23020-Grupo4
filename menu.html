@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Imagenes/menu-del-restaurante.png" type="image/x-icon">
+  <link href="https://www.flaticon.es/iconos-gratis/menu" title="menu iconos">
+  </link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c09d608a8a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/main.css">
+  <title>Menu | Di Nonna</title>
+</head>
+
+<body class="bodyMenu">
+
+  <!-- Parte de arriba de la pagina, en JS -->
+  <header class="header" id="cab"></header>
+
+  <div class="presentacion titulo" id="inicio">
+    <h2>Nuestra carta</h2>
+    <p id="bio">En nuestra exquisita cocina vas a encontrar platos clásicos e innovadores. Un restaurante con unico       culto, las delicias de la nonna. Los colores y sabores de nuestra propuesta gastronómica se combinan con un ambiente distinguido para que puedas disfrutar de buenos momentos. <br> ¡OJO! Por politicas de la empresa, nuestros platos elaborados son exhibidos en nuestras sucursales.</p>
+  </div>
+
+  <a href="#inicio" class="boton-flotante botonflota">
+    <img src="./Imagenes/Flechabotonflotante.png" alt="Botón flotante">
+  </a>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <main class="main main2">
+    <div id="app">
+      <div class="properties-container">
+        <div v-for="elemento in categorias">
+          <div class="box">
+            <img :src="elemento.strCategoryThumb" alt="" class="mi-clase">
+            <div>
+              <h3>{{elemento.strCategory}}</h3>
+              <p>Breve descripcion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Menu x2 -->
+  <!-- Pie de pagina, en JS -->
+  <footer id="pie"></footer>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./JS/consumoApi.js"></script>
+  <script src="./JS/main.js"></script>
+
+</body>
+
+</html>
