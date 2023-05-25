@@ -38,14 +38,25 @@ function enviarFormulario() {
         mensajesError.push('Experiencia');
     }
 
+    if (Email.includes("@") && Email.includes(".com") ) {
+    } else{
+        mensajesError.push('Mail');
+    }
+
+    if (/^\d+$/.test(Telefono)) {
+      } else {
+        mensajesError.push('Telefono');
+      }
+
     if (mensajesError.length > 0) {
-        var mensaje = 'Completa los siguientes datos: ' + mensajesError.join(', ');
+        var mensaje = 'Completa los siguientes datos correctamente: ' + mensajesError.join(', ');
         console.log(mensaje);
         alert(mensaje);
         return false;
     }
 
     console.log('Formulario validado y enviado exitosamente.');
+    alert('Formulario validado y enviado exitosamente.');
 
     return false;
 }
