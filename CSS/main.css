@@ -573,34 +573,6 @@ form .user-details .input-box {
     margin-bottom: 5px;
 }
 
-.bodyIndex {
-    .ventanaInicio {
-        display: none;
-    }
-
-}
-
-.bodyMenu {
-    .ventanaMenu {
-        display: none;
-    }
-
-}
-
-.bodySucursales {
-    .ventanaSucursales {
-        display: none;
-    }
-
-}
-
-.bodyTrabaja {
-    .ventanaTrabaja {
-        display: none;
-    }
-
-}
-
 @media (max-width: 281px) {
     .p2 {
         display: none;
@@ -634,4 +606,32 @@ form .user-details .input-box {
     text-align: center;
     vertical-align: center;
     font-family: 'Poppins', sans-serif
+}
+
+.bodyIndex {
+    .ventanaInicio {
+        display: none;
+    }
+
+}
+
+.bodyMenu {
+    .ventanaMenu {
+        display: none;
+    }
+
+}
+
+.bodySucursales {
+    .ventanaSucursales {
+        display: none;
+    }
+
+}
+
+.bodyTrabaja {
+    .ventanaTrabaja {
+        display: none;
+    }
+
 }
