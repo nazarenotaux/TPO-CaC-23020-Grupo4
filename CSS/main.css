@@ -372,9 +372,9 @@ header {
         zoom: 50%;
     }
 
-        .main2 {
-            zoom: 50%;
-        }
+    .main2 {
+        zoom: 50%;
+    }
 
     .container2 .box {
         margin-top: 5%;
@@ -389,7 +389,7 @@ header {
         zoom: 50%
     }
 
-    .sucursal{
+    .sucursal {
         zoom: 65%;
     }
 }
@@ -480,7 +480,7 @@ html {
     border-radius: 13%;
     zoom: 60%;
     margin: auto;
-    padding-right: 17px;
+    padding-right: 18px;
 }
 
 .main2 .box h3 {
@@ -590,7 +590,7 @@ form .user-details .input-box {
         margin-bottom: 5%;
     }
 
-    .sucursal{
+    .sucursal {
         zoom: 45%;
     }
 }
