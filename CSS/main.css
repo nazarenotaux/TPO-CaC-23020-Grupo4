@@ -613,22 +613,22 @@ form .user-details .input-box{
     margin-bottom: 5%;
 }
 
-.container2 .box{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+    /* .container2 .box{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    } */
 
-.botonflota{
-    display: none;
-}
+    /* .botonflota{
+        display: none;
+    } */
 
-.main3{
-    zoom: 65%;
-}
+    /* .main3{
+        zoom: 65%;
+    }
 
-.container-f{
-    zoom:45%
-}
+    .container-f{
+        zoom:45%
+    } */
 }
 
 .card-img {
